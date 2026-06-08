@@ -49,7 +49,7 @@ Rules:
 - For bills, due_each should be "monthly", "biweekly", or "once"
 - due_day is the day of month the bill is usually charged (1-31)
 - tag should be "sub" for subscriptions, "fixed" for fixed bills, "joint" for shared bills
-- keywords should be 1-3 lowercase strings from the transaction description that identify this bill
+- keywords should be 2-4 lowercase strings that match how this merchant actually appears in bank transaction descriptions. Include both a longer specific version and a shorter partial version. Examples: gym membership -> ["brawlerz box", "brawlerz"]. Netflix -> ["netflix.com", "netflix"]. Zelle to a person -> ["zelle payment to john smith", "john smith"]. Electric bill -> ["fpl direct debit", "fpl"]. Always use lowercase. Pull the exact words from the transaction descriptions provided.
 - Only include recurring charges, not one-time purchases
 - Ignore ATM withdrawals, transfers between accounts, and refunds`
       }]
